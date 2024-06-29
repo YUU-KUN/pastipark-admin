@@ -1,9 +1,13 @@
 <template>
   <div class="flex flex-col items-start justify-start w-full">
     <div class="flex justify-between items-center w-full mb-4">
-      <p class="text-32">Selamat {{getTime()}}, {{ user?.name }}!</p>
+      <p class="text-32">Selamat {{ getTime() }}, {{ user?.name }}!</p>
       <div class="rounded-2xl shadow p-2 bg-[#EBEBEB] ">
-        <PhBell :size="24" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
+          <path
+            d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z">
+          </path>
+        </svg>
       </div>
     </div>
 
@@ -96,7 +100,11 @@
               <td class="text-14 pt-6">Jl. Katapang no.130</td>
               <td class="text-14 pt-6">Parkir di tempat umum</td>
               <td class="text-14 pt-6">
-                <PhImageSquare :size="24" class="text-primary" weight="fill" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#017afb" viewBox="0 0 256 256">
+                  <path
+                    d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM48,48H208v77.38l-24.69-24.7a16,16,0,0,0-22.62,0L53.37,208H48ZM80,96a16,16,0,1,1,16,16A16,16,0,0,1,80,96Z">
+                  </path>
+                </svg>
               </td>
               <td class="text-14 pt-6">B 1234 AB</td>
             </tr>
